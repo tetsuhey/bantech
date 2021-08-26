@@ -1,6 +1,6 @@
 /* common */
 html, body{
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-family: 'Noto Sans JP',"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
     font-size:14px;
     line-height: 1.75rem;
     letter-spacing: .03rem;
@@ -11,7 +11,7 @@ ol,ul, p, span, small, strong, li, h1, h2, h3, h4, img, input, a{
     margin: 0;
     padding: 0;
     list-style: none;
-    color: initial;
+    color: #303333;
 }
 strong{
     background:linear-gradient(transparent 70%, hsl(16, 100%, 86%) 0%) ;
@@ -31,6 +31,7 @@ h3{
     font-size:16px;
 }
 a{
+    text-decoration: none;
 }
 a:hover{
 }
@@ -105,15 +106,15 @@ a:hover{
 nav .menu_bar{
     position: fixed;
     bottom: 0;
-    height: 60px;
-    border-top: 3px solid #F5DC56;
+    height: 70px;
+    border-top: 6px solid #F5DC56;
     width: 100%;
     z-index: 2;
 }
 .menu{
     position: fixed;
     width: calc(10rem + 20vw);
-    height: calc(100% - 60px);
+    height: calc(100% - 70px);
     top: 0;
     right: -100vw;
     background-color:#56D7F5;
@@ -146,8 +147,11 @@ nav .contacts{
     border-left:1px solid #333;
     border-right:1px solid #333;
 }
+nav .contacts .mail img{
+    width: auto;
+}
 #menu_btn{
-    width: 60px;
+    width: 70px;
     height: 100%;
     border-radius: 8px;
     margin: 0 auto;
@@ -158,7 +162,7 @@ nav .contacts{
     text-align: center;
     position: absolute;
     line-height: 0;
-    bottom: 10px;
+    bottom: 14px;
     left: 0;
     width: 100%;
 }
@@ -174,17 +178,17 @@ nav .contacts{
     background-color: #333;
 }
 #menu_btn .menu_line:nth-child(1){
-    top: 10px;
+    top: 12px;
 }
 #menu_btn .menu_line:nth-child(2){
-    top: 16px;
+    top: 18px;
 }
 #menu_btn.open .menu_line:nth-child(1){
-    top: 12px;
+    top: 14px;
     transform: rotate(45deg);
 }
 #menu_btn.open .menu_line:nth-child(2){
-    top: 12px;
+    top: 14px;
     transform: rotate(-45deg);
 }
 #menu_btn .menu_txt{
@@ -213,6 +217,19 @@ footer{
 #copyright{
     margin-bottom: 60px;
 }
+footer .mailbox{
+    border-radius: 8px;
+    width: 100%;
+}
+footer .mailbox a{
+    padding: 16px;
+    font-size: 1.3rem;
+}
+footer .mailbox img{
+    width: auto;
+    height: 24px;
+    margin-right: 16px;
+}
 
 /* breadcrumbs */
 .breadcrumbs{
@@ -221,6 +238,7 @@ footer{
 }
 .breadcrumbs ol li{
     padding-left: 4px;
+    color: #999;
 }
 .breadcrumbs ol li:after{
     content : ">";
@@ -276,6 +294,19 @@ footer{
 }
 
 /* COMPANY */
+.company_image{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60vw;
+    z-index: -1;
+    background-image: url(../res/company.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.company{
+    margin-top: 55vw;
+}
 .company_info th,
 .company_info td{
     padding: 16px;

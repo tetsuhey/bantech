@@ -35,10 +35,23 @@ a{
 }
 a:hover{
 }
-
+@media (min-width: 993px) {
+    html, body{
+        font-size: 20px;
+    }
+    h1, h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size:20px;
+    }
+}
 @media screen and (min-width:767px) and ( max-width:992px) {
 }
-@media screen and (min-width:993px) {
+@media (min-width:993px) {
+    section{
+        padding: 60px 0;
+    }
 }
 .color_white{
     color:#fff;
@@ -95,6 +108,7 @@ a:hover{
 }
 .gallery img{
     padding: 4px;
+    height: 100%;
 }
 .btn_{
     font-size: 20px;
@@ -102,7 +116,28 @@ a:hover{
     width: 100%;
     color: white;
 }
+@media (min-width:993px) {
+    .spacer_s{
+        margin-top: 24px;
+    }
+    .spacer_m{
+        margin-top: 40px;
+    }
+    .spacer_l{
+        margin-top: 64px;
+    }
+    .gallery img{
+        width: calc(100% / 4) !important;
+    }
+    .btn_{
+        font-size: 32px;
+    }
+}
+
 /* MENU */
+#nav-menu{
+    height: 70px;
+}
 nav .menu_bar{
     position: fixed;
     bottom: 0;
@@ -110,6 +145,9 @@ nav .menu_bar{
     border-top: 6px solid #F5DC56;
     width: 100%;
     z-index: 2;
+}
+nav .content{
+    height: 100%;
 }
 .menu{
     position: fixed;
@@ -210,6 +248,73 @@ nav .contacts .mail img{
 #menu_bk.open{
     left: 0;
 }
+@media (min-width: 993px) {
+    #nav-menu{
+        height: 80px;
+    }
+    nav .menu_bar{
+        top: 0;
+        height: 80px;
+        bottom: unset;
+        border-top: unset;
+        border-bottom: 6px solid #F5DC56;
+    }
+    nav .menu_bar .content{
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+    nav .logo{
+        width: 10%;        
+    }
+    nav .contacts{
+        width: unset;
+        display: flex;
+        flex-direction: row;
+        border:unset;
+        position: absolute;
+        right: 16px;
+    }
+    nav .menu{
+        position: unset;
+        width: unset;
+        height: 100%;
+        padding: 8px;
+        background: unset;
+    }
+    .menu .menu_item {
+        font-weight: bold;
+        font-size: 24px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    .menu .menu_item::after{
+        content: "";
+    }
+    nav .contacts .tel{
+        text-align: left;
+        line-height: 1rem;
+        padding: 8px 0;
+    }
+    nav .contacts .tel a{
+        font-size: 24px;
+        margin-top: 4px;
+        display: inline-block;
+    }
+    nav .contacts .mail .mailWrap{
+        padding:8px 2rem;
+        border-radius: 4px;
+        margin-left: 24px;
+        line-height: 1.1rem;
+    }
+    nav .contacts .mail img {
+        height: 1rem;
+        margin-bottom: 4px;
+    }
+}
 /* FOOTER */
 footer{
     padding: 30px 0;
@@ -229,6 +334,17 @@ footer .mailbox img{
     width: auto;
     height: 24px;
     margin-right: 16px;
+}
+footer .footernav li{
+    padding-right: 16px;
+}
+@media (min-width:993px) {
+    #copyright{
+        margin-bottom: 0px;
+    }
+    footer .footernav li{
+        padding-right: 16px;
+    }
 }
 
 /* breadcrumbs */
@@ -262,6 +378,15 @@ footer .mailbox img{
 .icon{
     max-height: 60px;
 }
+@media (min-width:993px) {
+    .icon{
+        height: 90px;
+        max-height: unset;
+    }
+    .iconset{
+        width: unset !important;
+    }
+}
 
 /* FACILITY */
 .tablewrap{
@@ -277,7 +402,7 @@ footer .mailbox img{
     height: 1.7rem;
 }
 #facilitiy_info table{
-    /* width: 100%; */
+    width: 100%;
     /* border-collapse: collapse; */
     white-space: nowrap;
 }
@@ -292,6 +417,17 @@ footer .mailbox img{
 #facilitiy_info table tbody tr:nth-child(even){
     background-color: #F2F2F2;
 }
+
+@media (min-width:993px) {
+    .check p{
+        text-align: center;
+    }
+    .check img{
+        width: 50%;
+        padding: 0 16px;
+    }
+}
+
 
 /* COMPANY */
 .company_image{

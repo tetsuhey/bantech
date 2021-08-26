@@ -37,31 +37,45 @@
     </head>
 <body>
     <header id="header">
-        <nav id='sitenavigation'>
-                <div class="d-flex flex-row menu_bar bk_blue justify-content-between">
-                    <div class="logo"><img src="" alt="BANTECHロゴ" /></div>
-                    <ul class="flex flex-lg-column menu transition">
+        <nav id="nav-menu">
+            <div class="menu_bar bk_blue">
+                <div class="content d-flex flex-row justify-content-between justify-content-lg-start">
+                    <div class="logo"><img src="" alt="BANTECH" /></div>
+                    <ul class="d-flex flex-column flex-lg-row align-items-lg-center menu transition">
                         <li class="menu_item"><a href="/">HOME</a></li>
                         <li class="menu_item"><a href="/facilities/">設備紹介</a></li>
-                        <li class="menu_item"><a href="/products/">部品紹介</a></li>
-                        <li class="menu_item"><a href="/#/">会社概要</a></li>
+                        <li class="menu_item"><a href="/products/">製品紹介</a></li>
+                        <li class="menu_item"><a class="color_white" href="/company/">会社概要</a></li>
                     </ul>
                     <div class="contacts center">
-                        <div class="tel"></div>
+                        <div class="tel d-none d-lg-block">
+                            <p class="color_white small">平日9:00 - 17:00</p>
+                            <a class="" href="tel:0925031066">092-503-1066</a>
+                        </div>
                         <div class="mail">
-                            <a href="mailto:bantech@gaea.ocn.jp">
+                            <a class="d-lg-none" href="mailto:bantech@gaea.ocn.jp">
                                 <img src="../res/mailicon.svg" alt="mail">
                                 <p class="small">お問い合わせ</p>
                             </a>
+                            <div class="mailWrap bk_white d-none d-lg-block">
+                                <a class="" href="mailto:bantech@gaea.ocn.jp">
+                                    <div class="">
+                                        <img src="../res/mailicon_blue.svg" alt="mail">
+                                        <span class="small color_blue">24時間受付</span>
+                                    </div>
+                                    <p class="center bold">お問い合わせ</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu_btn d-none-lg">
+                    <div class="menu_btn d-lg-none">
                         <div id="menu_btn" class="bk_white relative">
                             <span class='menu_line transition'></span>
                             <span class='menu_line transition'></span>
                         </div>
                     </div>
                 </div>
+            </div>
         </nav>
         <div id="menu_bk" class="transition"></div>
     </header>
@@ -80,7 +94,7 @@
         
         <div class="container spacer_m">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-xl-8 offset-xl-2">
                     <table class="company_info">
                         <tbody>
                             <tr>
@@ -141,16 +155,22 @@
     <footer class="bk_blue">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <img class="spacer_s" src="" alt="ロゴ">
+                <div class="col-12 col-lg-6 spacer_s">
+                    <img class="" src="" alt="ロゴ">
                     <p class='color_white spacer_s'>有限会社 バンテック</p>
                     <p class='color_white'>〒816-0912</p>
                     <p class='color_white'>福岡県大野城市御笠川1丁目11番18号</p>
                     <p class='color_white'>TEL 092-503-1066</p>
                     <p class='color_white'>FAX 092-504-3406</p>
                 </div>
-                <div class="col-12 spacer_s">
-                    <p>精密金型製作・加工についてのご質問・お見積りはお気軽にお問い合わせください。</p>
+                <div class="col-12 col-lg-6 spacer_s">
+                    <ul class="footernav d-flex flex-row align-items-center">
+                        <li class="menu_item"><a class="bold" href="/">HOME</a></li>
+                        <li class="menu_item"><a class="bold" href="/facilities/">設備紹介</a></li>
+                        <li class="menu_item"><a class="bold" href="/products/">製品紹介</a></li>
+                        <li class="menu_item"><a class="bold" href="/company/">会社概要</a></li>
+                    </ul>
+                    <p class="spacer_s">精密金型製作・加工についてのご質問・お見積りはお気軽にお問い合わせください。</p>
                     <div class="mailbox bk_white spacer_s">
                         <a class="d-flex justify-content-center" href="mailto:bantech@gaea.ocn.jp">
                             <img src="../res/mailicon_blue.svg" alt="mail">

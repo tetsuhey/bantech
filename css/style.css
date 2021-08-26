@@ -158,6 +158,13 @@ nav .menu_bar{
 nav .content{
     height: 100%;
 }
+.content a{
+    line-height: 40px;
+    text-align: center;
+}
+.content a img{
+    width: 70%;
+}
 .menu{
     position: fixed;
     width: calc(10rem + 20vw);
@@ -183,6 +190,9 @@ nav .content{
     content: '>';
     margin-left: 1rem;
     font-weight: bold;
+}
+.menu .menu_item.active:after{
+    color: white;
 }
 nav .logo,
 nav .contacts,
@@ -260,6 +270,13 @@ nav .contacts .mail img{
 @media (min-width: 993px) {
     #nav-menu{
         height: 60px;
+    }
+    .content a{
+        line-height: unset;
+        text-align: unset;
+    }
+    .content a img{
+        width: 100%;
     }
     nav .menu_bar{
         top: 0;
@@ -353,7 +370,7 @@ footer .mailbox img{
     margin-right: 16px;
 }
 footer .logo{
-    width: 70%;
+    width: 50%;
 }
 footer .footernav li{
     padding-right: 16px;

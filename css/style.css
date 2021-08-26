@@ -136,7 +136,11 @@ a:hover{
 
 /* MENU */
 #nav-menu{
-    height: 70px;
+    /* height: 70px; */
+}
+#nav-menu .logo{
+    display: flex;
+    justify-content: center;
 }
 nav .menu_bar{
     position: fixed;
@@ -267,7 +271,8 @@ nav .contacts .mail img{
         position: relative;
     }
     nav .logo{
-        width: 10%;        
+        width: 13%;
+        margin-right: 16px; 
     }
     nav .contacts{
         width: unset;
@@ -335,6 +340,9 @@ footer .mailbox img{
     height: 24px;
     margin-right: 16px;
 }
+footer .logo{
+    width: 70%;
+}
 footer .footernav li{
     padding-right: 16px;
 }
@@ -344,6 +352,9 @@ footer .footernav li{
     }
     footer .footernav li{
         padding-right: 16px;
+    }
+    footer .logo{
+        width: 10rem;
     }
 }
 

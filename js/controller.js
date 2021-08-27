@@ -9,5 +9,8 @@ $(function(){
     });
     $('#menu_bk').on('click',function(){
         $(document).trigger('menuopen');
-    })
+    });
+    $('.menu_item a').on('click',function(){
+        $(document).trigger('menuopen');
+    });
 });

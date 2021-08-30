@@ -551,17 +551,20 @@ footer .footernav li{
 
 /* COMPANY */
 .company_image{
-    position: fixed;
+    /* position: fixed;
     top: 0;
     width: 100%;
     height: 60vw;
     z-index: -1;
-    background-image: url(../res/company.jpeg);
+    background-image: url(../res/company.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 section.company{
-    margin-top: 55vw;
+    margin-top: 40vw;
 }
 .company_info th,
 .company_info td{

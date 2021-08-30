@@ -479,9 +479,13 @@ footer .footernav li{
         width: 80%;
         max-width: 952px;
     }
+    #mainvisual{
+        width: 100%;
+    }
     #mainvisual img{
         width: 70%;
         max-width: 900px;
+        margin: 0 auto;
     }
 }
 

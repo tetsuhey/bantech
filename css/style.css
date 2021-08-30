@@ -387,7 +387,7 @@ footer .footernav li{
         padding-right: 16px;
     }
     footer .logo{
-        width: 10rem;
+        /* width: 10rem; */
     }
 }
 
@@ -513,20 +513,39 @@ footer .footernav li{
 }
 #facilitiy_info table tr td{
     padding: .75rem 8px;
-    min-width: 5rem;
+    min-width: 150px;
 }
 #facilitiy_info table tbody tr:nth-child(even){
     background-color: #F2F2F2;
 }
-
+#facilitiy_info table th:nth-child(1),
+#facilitiy_info table td:nth-child(1){
+    width: 12rem;
+}
+#facilitiy_info table th:nth-child(2),
+#facilitiy_info table td:nth-child(2){
+    width: 3rem;
+    min-width: 3rem;
+}
+#product_info .relative{
+    margin-top: 64px;
+}
 @media (min-width:993px) {
     .check p{
         text-align: center;
     }
     .check img{
-        width: 50%;
-        padding: 0 16px;
+        /* width: 50%;
+        padding: 0 16px; */
     }
+    .fit_bottom{
+        position: absolute;
+        width: calc(100% - 32px);
+        bottom: 0;
+    }
+    #product_info .relative{
+        margin-top: 0px;
+    }   
 }
 
 

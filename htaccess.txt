@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^profile.html$ https://bantech.jp/company/ [L,R=301]
+RewriteRule ^product.html$ https://bantech.jp/products/ [L,R=301]
+RewriteRule ^equipment.html$ https://bantech.jp/facilities/ [L,R=301]
+RewriteRule ^access.html$ https://bantech.jp/company/ [L,R=301]
+
+ErrorDocument 404 /404.html
